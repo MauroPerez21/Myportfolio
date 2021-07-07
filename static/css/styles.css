@@ -1,0 +1,174 @@
+/*CV Elegant Styling*/
+:root{
+  --deepcolor: #000;
+  --colortheme: #e8edf7da;
+  --activetheme:#2985ff;
+  --activethemeborder:#ffffb3;
+  --gradLight:#4d94ff;
+  --gradDark:#000033;
+  --gradMed:#000066;
+}
+.intro-left{
+  background: url('../img/night-keyboard.png');
+  position:fixed;
+  left:0;
+  width:25%;
+  height: 100%;
+}
+.avatar{
+  background: url('../img/logo-sena.png');
+  width:9rem;
+  height:9rem;
+  border-radius: 50%;
+  margin:1rem
+}
+
+
+@media(max-width: 768px){
+  .intro-left{
+      height: 50vh;
+      margin-bottom:0;
+      position: relative;
+      width:100%;
+  }
+}
+.full-height{
+  height:100%;
+}
+
+section{
+ 
+  font-size: 1.0rem;
+}
+
+
+#intro{
+  background: url('../img/laptop.png');
+}
+#contact{
+  height:50vh;
+}
+
+.nav-list{
+  height:10vh;
+  display:flex;
+  width:50%;
+  justify-content:space-around;
+  align-items:center;
+  margin-left:auto;
+  list-style:none;
+}
+.nav-links{
+  text-decoration:none;
+  font-size:18px;
+}
+.home{
+  height:90vh;
+  width:100%;
+}
+
+
+/*Timeline*/
+
+/* Remove default bullets */
+ul, #myUL {
+  list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25B6";
+  color: #fff;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: block;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+}
+
+.footer{
+  
+
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, var(--deepcolor), var(--gradMed), var(--deepcolor));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, var(--deepcolor), var(--gradMed), var(--deepcolor)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*border-radius: 24px 0px 0px ;*/
+}
+#dashboard{
+
+  width:25%;
+}
+#notfound{
+  background: url('../img/night-keyboard.png');
+}
+/*Sidebar style*/
+
+
+.box{
+  height:100%;
+  width:8.333%;
+  top:96px;
+  right:0px;
+  position:fixed;
+  overflow-x: hidden;
+  z-index: 99;
+
+}
+@media(max-width: 768px){
+  .box{
+      height:100%;
+      width:160px;
+      top:96px;
+      left:0px;
+      position:fixed;
+      overflow-x: hidden;
+      z-index:99;
+   
+  }
+}
+
+.theme{
+  padding:6px 8px 6px 24px;
+  text-decoration:none;
+  font-size:1.0rem;
+  color:var(--colortheme);
+  display:block;
+
+}
+.box a:hover{
+  color:var(--activetheme);
+}
+
+.bubble{
+  
+  border-top: 2px solid var(--colortheme);
+  color: var(--activetheme);
+}
+
+#topbtn{
+  display:none;
+}
