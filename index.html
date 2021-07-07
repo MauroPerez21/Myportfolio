@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/formsContact.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/collapse.css">
+    <link rel="stylesheet" href="static/css/preloader.css">
+    <link rel="stylesheet" href="static/css/urlimages.css">
+    <i class="">
+    <link rel="icon" href=""></i>
+<!--Circular effect-->
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script> 
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--BOOTSTRAP POPPER-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!--FONT AWESOME-->  
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="static/js/extensions/main.js"></script>
+    <title>Single Page App</title>
+</head>
+<body>
+  
+  <div class="loader hidden">
+    <img src="static/img/Rhombus.gif" alt="loading..." >
+    <div class="imgloader">
+</div>
+  
+  </div>  
+<!--dataset property DOM-->
+    <header id="topNav" class="fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark py-1">
+            <div class="container">
+                <a class="navbar-brand text-light" href="#"><em class="text-muted">
+                    <i class="bi bi-brush"></i>
+                  M@urocoder-official site</em>
+                </a>
+                
+                    <button 
+                    class="navbar-toggler fixed-top" 
+                    type="button" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#gitnav"
+                    aria-controls="gitnav"
+                    aria-label="Toggle navigation"
+                    id="toggler"
+                    >
+                    <input type="checkbox" id="nav" class="hidden">
+                    <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>    
+                    </label>
+                    </button>
+                    <div class="collapse navbar-collapse" id="gitnav">
+                    <ul class="navbar-nav ms-auto">
+                      <!--&#xf508;&nbsp;-->
+                        <li class="nav-item"><em class="text-muted">
+                            <a class="nav-link cool-link" href="/"
+                            data-link>/ home</a></em>
+                        </li>
+                      <!--&#xf304;&nbsp;-->
+                        <li class="nav-item"><em class="text-muted">
+                          <a class="nav-link cool-link" href="/contact"
+                          data-link>/ contact</a></em>
+                        </li>
+                        <!--&#xf2c2;&nbsp;-->
+                        <li class="nav-item"><em class="text-muted">
+                            <a class="nav-link cool-link" href="/profile"
+                            id="asidebtn"
+                            data-link>/ profile</a></em>
+                        </li>
+                    </ul>
+                </div>
+            </div>     
+        </nav>
+    </header>
+<!--BODY-->
+        
+<div id="app"></div>
+<!-- Modal -->
+<div class="modal fade" id="modal-contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark">
+        <div 
+        class="modal-header text-primary" 
+        style="border-bottom: 2px solid #4d94ff">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body ">
+          <form  method="POST" id="form">
+            <div class="form-group mb-2" id="group-user">
+                <input 
+                type="text" 
+                name="user" 
+                placeholder="your name" 
+                value="Mauricio"
+                class="form-control" 
+                id="user"
+                />
+                <div class="form-validation" id="check"><p class="form-err">*Only alphabetic chars</p></div>
+                
+            </div>
+            
+            <div class="form-group mb-2" id="group-email">
+                <input class="form-control"
+                type="text"
+                name="email" 
+                placeholder="myemail@mail.com" 
+                value="myemail@mail.com"
+                id="email"
+                />
+                <div class="form-validation"><p class="form-err">*Unvalid email chars @ + .com</p></div>
+                
+            </div>
+            <div class="form-group mb-2" id="group-phone">
+                <input class="form-control"
+                type="text" 
+                name="phone" 
+                placeholder="Phone number"
+                value="3015942465"
+                id="phone"
+                />
+                <div class="form-validation"><p class="form-err">*Only numbers and cannot be separated</p></div>
+                
+            </div>
+            <!-- User category input -->
+            <div class="form-group mb-4">
+                <select class="form-control"
+                type="text"
+                name="category"
+                class="form-select" 
+                id="category"
+                >
+                <option>Student</option>
+                <option>Client</option>
+                <option>Enterprise</option>
+                </select>
+            </div>
+            <div class="form-group" id="group-sms">
+                <label for="exampleTextarea" class="text-info">Message</label>
+                <textarea  class="form-control mb-4" 
+                name="sms"
+                rows="3"
+                id="sms" 
+                ></textarea>
+                <div class="form-validation"><p class="form-err">*At least 12 characters and less than 1200</p></div>
+                
+              </div>
+           
+            <div class="form-group"><p id="tandc">
+              <button type="button" class="badge btn-primary">T&C</button>
+            <input type="checkbox" id="ok">
+              &nbsp; I accept terms and conditions</p>
+            </div>
+            <p id="success">Your message has been sent!</p>
+            <!-- Submit button -->
+            <div class="row">
+                <div class="col-md-6 d-grid ">
+                <button type="reset" class="btn btn-success" name="login">Reset</button>
+                </div>
+                <div class="col-md-6 d-grid ">
+                <button type="submit" class="btn btn-primary" id="send">Send</button>
+                </div>
+            </div>    
+        </form>
+        <div class="card-footer">
+          <div id="errormsg"></div>  
+          </div> 
+        </div>
+        <div class="modal-footer"style="border-top: 2px solid #4d94ff" >
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Banner-->
+<section>
+  <div class="d-flex bg-dark" >
+    <div class="container">
+      <div class="mask my-4">
+      <div class="row align-items-center text-center bg-dark">
+
+            <div class="col-md-3 text-center">
+              <i class='fab' style='font-size:48px;background-color:red; color:white'>&#xf420;</i>
+            </div>
+            <div class="col-md-6 bg-dark text-end" >
+                 <img src="static/img/dosomething.png" class="img-fluid" alt="settings...">
+            </div>
+            <div class="col-md-3">
+              <i class='fab' style='font-size:48px;color:lime'>&#xf41b;</i> 
+             
+            </div>
+            
+           </div> 
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--SideBar-->
+<div class="box" id="navaside" class="navbar">
+  <div class="bubble"></div>
+    <a href="/profile" 
+    data-link
+    class="theme fas">&#xf2c2;</a>
+    
+    <a href="#intro" 
+    data-page="intro"
+    class="theme"><i class="fa fa-exclamation-triangle"></i></a>
+    
+    <a href="#profile" 
+    data-page="profile"
+    class="theme"><i class="fa fa-graduation-cap"></i></a>
+    
+    <a href="#skills" 
+    data-page="skills"
+    class="theme"><i class="fa fa-wrench"></i></a>
+     <a href="/projects" 
+    data-link
+    class="theme fas">&#xf0c3;</a>
+</div>
+
+<script src="static/js/extensions/validContact.js"></script>
+   
+<footer class="footer fixed-bottom text-end bg-dark">
+  <div class="container text-muted"> 
+    <a href="#" class="text-warning" style="text-decoration: none;">
+      ©</a>  <small>2021</small>  - <em>Mauro's Portfolio Official Website</em> <h6></h6>  
+  </div> 
+  <a href="#" class="position-absolute bottom-0 end-0  p-5" id="topbtn">
+    <i class="bi bi-arrow-up-circle h1 text-warning"></i></a>
+
+  <div class="" style=" position:fixed; bottom:-126px; left:12.5%;">
+    <div class="circular-text" style="color:rgb(245, 203, 14)">
+    <span id="rotated">
+      &nbsp; code * design * analyze * deploy * test * 
+    </span> 
+  </div>
+ </div> 
+</footer>
+</body>
+</html>
+<script>
+//Top btn
+var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          //document.getElementById("navbar").style.top = "0";
+          document.getElementById('topbtn').style.display = 'none';
+        } else {
+          //document.getElementById("navbar").style.top = "-96px";
+          document.getElementById('topbtn').style.display = 'block';  
+        }
+        prevScrollpos = currentScrollPos;
+      }
+
+</script>
+
+<script type="module" src="static/js/index.js"></script>
+<script src="static/js/extensions/circleType.js"></script>
+
