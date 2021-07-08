@@ -71,8 +71,8 @@ export default class extends AbstractView{
               </ul>
             </div>
             <div class="col-lg-4">
-              <div class="h1 mb-3 text-dark text-center" id="img">
-              <i class="fa" style="font-size:96px;">&#xf501;</i>
+              <div class="h1 mb-3 text-dark text-center" id="imgportfolio">
+              <i class="fa" style="font-size:120px;">&#xf501;</i>
               </div>
             </div>
           </div>

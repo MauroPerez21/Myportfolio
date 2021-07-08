@@ -16,8 +16,7 @@ export default class extends AbstractView{
                  </h3>
                  <p>I am Technologist of <em class="text-primary">Analysis and Information Systems Development</em> (ADSI) from CESFI:</p>
                  <p><small>Centro Servicios Financieros</small></p>
-                 <i class="far text-success" style="font-size:42px;">
-                 <img src="static/img/logo-sena.png" alt="	&#xf2c1;"></img></i>
+                 
                  <a href="/profile" class="btn btn-success mt-3" data-link>
                      Read more
                    </a>
