@@ -11,8 +11,7 @@ export default class extends AbstractView{
          <div class="row align-items-center justify-content-between">
              <div class="col-lg p-5 text-dark text-end">
                  <h3>
-                     I am Web Developer, graduated at <span href="#" class="text-warning">SENA.</span> 
-                     
+                     I am a <span class="text-warning">Web Developer</span>, graduated from <em>SENA.</em> 
                  </h3>
                  <p>I am Technologist of <em class="text-primary">Analysis and Information Systems Development</em> (ADSI) from CESFI:</p>
                  <p><small>Centro Servicios Financieros</small></p>
