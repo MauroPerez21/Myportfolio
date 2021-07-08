@@ -17,10 +17,10 @@
 }
 .avatar{
   background: url('../img/logo-sena.png');
-  width:9rem;
-  height:9rem;
+  width:2rem;
+  height:2rem;
   border-radius: 50%;
-  margin:1rem
+  margin:0rem;
 }
 
 
@@ -152,7 +152,7 @@ ul, #myUL {
 }
 
 .theme{
-  padding:6px 8px 6px 24px;
+  padding:6px 8px 6px 2px;
   text-decoration:none;
   font-size:1.0rem;
   color:var(--colortheme);

@@ -26,8 +26,11 @@ export default class extends AbstractView{
               </i>Watch my projects
             </a>
           </div>
-          <div class="col-lg text-danger text-center w-10">
-          <i class='fab' style='font-size:196px;'>&#xf3bd;</i>
+          <div class="col-lg w-10">
+          <div class="mask container p-4 aling-items-center" id="laravel">
+           <i class='bi bi-puzzle' style='font-size:300px; color:rgba(255, 0, 0, 0.2);'>
+             </i>
+           </div>
           </div>
         </div>
       </div>

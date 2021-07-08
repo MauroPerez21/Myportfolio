@@ -72,7 +72,7 @@ export default class extends AbstractView{
     <div class="col-md-3 d-grid "></div>
         <div class="col-md-6 d-grid ">
         
-          <a href="https://api.whatsapp.com/send?phone=573106323631" class="btn btn-success fab">&#xf232;&nbsp;whatsapp</a>
+          <a href="https://api.whatsapp.com/send?phone=573106323631" class="btn btn-success"><i class="bi bi-whatsapp"></i>&nbsp;whatsapp</a>
         </div>
         <!--
         <div class="col-md-6 d-grid">

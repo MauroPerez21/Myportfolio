@@ -14,14 +14,17 @@ export default class extends AbstractView{
                      I am Web Developer, graduated at <span href="#" class="text-warning">SENA.</span> 
                      
                  </h3>
-                 <p>I am Technologist of <em class="text-primary">Analysis and Information Systems Development</em> (ADSI) from CESFI</p>
-                 <a href="/profile#profile" class="btn btn-success mt-3" data-link>
+                 <p>I am Technologist of <em class="text-primary">Analysis and Information Systems Development</em> (ADSI) from CESFI:</p>
+                 <p><small>Centro Servicios Financieros</small></p>
+                 <i class="far text-success" style="font-size:42px;">
+                 <img src="static/img/logo-sena.png" alt="	&#xf2c1;"></img></i>
+                 <a href="/profile" class="btn btn-success mt-3" data-link>
                      Read more
                    </a>
              </div>
              <div class="col-lg p-5 text-center">
              <h1 class="text-danger">
-               <i class="fab" style="font-size:216px;">&#xf13b;</i></h1>
+             <i class="bi bi-file-code" style="font-size:216px;"></i>
              </div>
          </div>
      </section>
@@ -31,9 +34,11 @@ export default class extends AbstractView{
        <div class="container">
          <!--Vertical alineation-->
          <div class="row align-items-center justify-content-between">
-           <div class="col-lg text-lead"><em><i class='fab' style='font-size:120px'>
-             <img src="static/img/php.png" class="img-fluid" alt="&#xf457;"></i>
-           </em>
+           <div class="col-lg  text-center">
+          <div class="mask container p-4 aling-items-center" id="php-puppet">
+           <i class='bi bi-puzzle' style='font-size:300px; color:rgba(255, 0, 0, 0.2);'>
+             </i>
+           </div>
              </div>
            <div class="col-lg p-5">
              <h2 class="display-6 text-primary">Learn the Fundamentals

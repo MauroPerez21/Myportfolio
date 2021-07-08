@@ -30,7 +30,7 @@ function geoLaptop(x){//WIDTHS LAPTOP
     
     var aside = document.getElementById('navaside');
     aside.style.display = 'block';
-    aside.style.marginRight = '-4.5%';
+    aside.style.marginRight = '-3%';
     /*
     var rotAside = document.getElementById('rotate');
     rotAside.style.top = '12px';

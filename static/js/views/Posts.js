@@ -14,7 +14,7 @@ export default class extends AbstractView{
            <div class="row text-center align-items-center full-height pt-5 mt-5">
              <div class="col" style="border-bottom:2px solid blueviolet">
              <h1 class="text-primary">
-               <i class="fas" style="font-size:192px;">&#xf406;</i></h1>
+               <i class="bi bi-person-circle" style="font-size:192px;"></i></h1>
              <p class="h2 text-light display-6">Mauricio P&eacuterez</p>
              <p class="text-warning">Web Developer Full Stack</p>
        
@@ -123,14 +123,14 @@ export default class extends AbstractView{
       <section data-index="2" class="skills">
       <div id="skills" 
       class="container bg-primary p-5 my-5">
-        <h2 class="display-5 text-center text-light"><i class="fa fa-tools"></i> Skills</h2>
+        <h2 class="display-5 text-center text-light"><i class="bi bi-tools"></i> Skills</h2>
 
           <div class="row text-light bg-dark ms-auto">
             <div class="col-md-4"> 
               <br>
               <h4 class="text-primary">&nbsp;Back-end</h4>
               <br>
-              <h5 class="display-6 text-danger text-center"><i class="fa fa-database"></i></h5>
+              <h5 class="display-6 text-danger text-center"><i class="bi bi-gear"></i></h5>
               <ul class="text-end">
                 <li>SQL</li>
                 <li>JSON</li>
@@ -153,7 +153,7 @@ export default class extends AbstractView{
             <div class="col-md-4"> <br>
               <h4 class="text-primary">&nbsp;Frameworks</h4>
                <br>
-              <h5 class="display-6 text-danger text-center"><i class="fa fa-laptop"></i></h5>
+              <h5 class="display-6 text-success text-center"><i class="bi bi-laptop"></i></h5>
               
               <ul class="text-end">
                 <li>Express</li>
@@ -162,76 +162,7 @@ export default class extends AbstractView{
               </ul>
             </div>
 <!--START ICONS-->
-            <div class="container bg-dark">
-            <h6 class="display-4 text-primary text-end">
-            <small>
-            <i class="fab">&#xf213;</i>&nbsp;Development Tools</h6>
-            </small>
-            <div class="row p-4">
-              <div class="col-md-3 text-end">
-                
-                <i class='fab' style='font-size:42px;color:cyan'>&#xf13c;</i>
-              </div>
-              <div class="col-md-6 text-center">
-                <i class='fab' style='font-size:42px;color:red'>&#xf13b;</i>
-              </div>
-      
-              <div class="col-md-3">
-                <i class='fab' style='font-size:42px;color:yellow'>&#xf3b9;</i> 
-              </div>
-            </div>
-      
-            <div class="row">
-              <div class="col-md-4 text-end">
-                <i class='fab' style='font-size:42px;color:lime'>&#xf3d3;</i> 
-              </div>
-              <div class="col-md-4"></div>
-              <div class="col-md-4 ">
-      <!--Npm-->
-              <i class='fab' style='font-size:42px;color:red'>&#xf3d4;</i>
-              </div>
-            </div>
-      
-            <div class="row p-4">
-              <div class="col-md-4 text-end">
-              </div>
-              <div class="col-md-4 text-center bg-dark">
-                <!--Sass-->
-             <i class='fab' style='font-size:42px;color:orange'>&#xf41e;</i>
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-      
-      
-            <div class="row p-4">
-              <div class="col-md-4 text-center pt-2">
-      <!--Node-->
-              <i class='fab' style='font-size:42px;color:white'>&#xf419;</i>
-              </div>
-              <div class="col-md-4 text-center pt-2">
-       <!--Docker Container-->
-              <i class='fab' style='font-size:42px;color:cyan'>&#xf395;</i> 
-              </div>
-              <div class="col-md-4 text-center pt-2">
-       <!--Laravel-->
-              <i class='fab' style='font-size:42px;color:red'>&#xf3bd;</i>
-            </div>
-      
-            <div class="row p-4">
-              <div class="col-md-4 text-end">
-                <!--Discord-->
-                <i class='fab' style='font-size:42px;color:#666'>&#xf392;</i>
-              </div>
-              <div class="col-md-4 bg-dark">
-                
-              </div>
-              <div class="col-md-4">
-                <!--Git-->
-              <i class='fab' style='font-size:42px;color:white'>&#xf1d3;&#xf113;</i>
-              </div>
-            </div>
-            </div>
-        </div>
+            
 <!--End icons-->
           </div>
         </div>
