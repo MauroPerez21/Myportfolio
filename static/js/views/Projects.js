@@ -43,7 +43,7 @@ export default class extends AbstractView{
                <div class="card bg-light">	
      <div class="card-header text-center" id="precommerce">
                <h1 class="text-secondary">
-               <i class="fab" style="font-size:192px;">&#xf1f0;</i></h1></div>
+               <i class="fab" style="font-size:192px; color:rgba(51, 102, 255, 0.1);">&#xf1f0;</i></h1></div>
                  <div class="card-body">
                    <h4 class="card-title text-end text-warning">Ecommerce</h5>
                    <h6 class="card-subtitle mb-2 text-muted text-end">PHP-OOP With Laravel</h6>
@@ -67,7 +67,7 @@ export default class extends AbstractView{
                <div class="card bg-light">
      <div class="card-header text-center" id="prsqlite3">
                <h1 class="text-primary">
-               <i class="fas" style="font-size:192px;">&#xf1c9;</i></h1></div>
+               <i class="fas" style="font-size:192px; color:rgba(51, 102, 255, 0.1);">&#xf1c9;</i></h1></div>
                  <div class="card-body">
                    <h4 class="card-title text-end text-warning">Sqlite3</h5>
                    <h6 class="card-subtitle mb-2 text-muted text-end">Relational Database</h6>
@@ -90,7 +90,7 @@ export default class extends AbstractView{
                <div class="card bg-light">
                <div class="card-header text-center" id="prjson">
                <h1 class="text-primary">
-               <i class="far" style="font-size:192px;">&#xf1c9;</i></h1></div>
+               <i class="far" style="font-size:192px; color:rgba(51, 102, 255, 0.1);">&#xf1c9;</i></h1></div>
                  <div class="card-body">
                    <h4 class="card-title text-end text-warning">JSON</h5>
                    <h6 class="card-subtitle mb-2 text-muted text-end">Non Relational Database</h6>
@@ -112,7 +112,7 @@ export default class extends AbstractView{
                <div class="card bg-light">
      <div class="card-header text-center" id="precatalog">
                <h1 class="text-secondary">
-               <i class="fas" style="font-size:192px;">&#xf77d;</i></h1></div>
+               <i class="fas" style="font-size:192px; color:rgba(51, 102, 255, 0.1);">&#xf77d;</i></h1></div>
                
                <div class="card-body">
                    <h4 class="card-title text-end text-warning">eCatalog</h5>
