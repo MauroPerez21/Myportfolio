@@ -69,18 +69,18 @@ export default class extends AbstractView{
     </div>  
     
     <div class="row g-3 pb-4">
-    <div class="col-md-3 d-grid "></div>
+   
         <div class="col-md-6 d-grid ">
         
           <a href="https://api.whatsapp.com/send?phone=573106323631" class="btn btn-success"><i class="bi bi-whatsapp"></i>&nbsp;whatsapp</a>
         </div>
-        <!--
+      
         <div class="col-md-6 d-grid">
           <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-contact">
             Contact
           </a>
-        </div>-->
-        <div class="col-md-3 d-grid "></div>
+        </div>
+        
     </div>  
   </div>
   </div>
