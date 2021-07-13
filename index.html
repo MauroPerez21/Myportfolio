@@ -90,41 +90,40 @@
         
 <div id="app"></div>
 <!-- Modal -->
-<div class="modal fade" id="modal-contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal-contact" tabindex="-1" aria-labelledby="ModalContact" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content bg-dark">
         <div 
         class="modal-header text-primary" 
         style="border-bottom: 2px solid #4d94ff">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="ModalContact">Modal title</h5>
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body ">
-          <form  method="POST" id="form">
+          <form  method="POST" id="form" data-netlify="true">
+<!-- User category user -->          
             <div class="form-group mb-2" id="group-user">
                 <input 
                 type="text" 
                 name="user" 
                 placeholder="your name" 
-    
                 class="form-control" 
                 id="user"
                 />
                 <div class="form-validation" id="check"><p class="form-err">*Only alphabetic chars</p></div>
-                
             </div>
-            
+<!-- User category email -->           
             <div class="form-group mb-2" id="group-email">
                 <input class="form-control"
                 type="text"
                 name="email" 
                 placeholder="myemail@mail.com" 
-             
                 id="email"
                 />
                 <div class="form-validation"><p class="form-err">*Unvalid email chars @ + .com</p></div>
                 
             </div>
+<!-- User category phone -->
             <div class="form-group mb-2" id="group-phone">
                 <input class="form-control"
                 type="text" 
@@ -136,7 +135,7 @@
                 <div class="form-validation"><p class="form-err">*Only numbers and cannot be separated</p></div>
                 
             </div>
-            <!-- User category input -->
+<!-- User category input -->
             <div class="form-group mb-4">
                 <select class="form-control"
                 type="text"
@@ -149,6 +148,7 @@
                 <option>Enterprise</option>
                 </select>
             </div>
+<!-- User category message -->
             <div class="form-group" id="group-sms">
                 <label for="exampleTextarea" class="text-info">Message</label>
                 <textarea  class="form-control mb-4" 
@@ -159,7 +159,7 @@
                 <div class="form-validation"><p class="form-err">*At least 12 characters and less than 1200</p></div>
                 
               </div>
-           
+<!-- User category terms and conditions-->         
             <div class="form-group"><p id="tandc">
               <button type="button" class="badge btn-primary">T&C</button>
             <input type="checkbox" id="ok">
