@@ -100,7 +100,7 @@ form.addEventListener('submit', (e) => {
 			//Class object calling
 			const Msg = new Message(user, email, phone, category, message);
 			console.log(Msg);
-			//um.send();
+			um.send();
 			setTimeout(function(){
 			um.message('Thank you'+ user +', I receive your message','success');
 			}, 2000);	

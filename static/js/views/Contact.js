@@ -1,5 +1,5 @@
 import AbstractView  from "./AbstractView.js";
-
+let myArray = ['Timeline','FAQ']
 export default class extends AbstractView{
     constructor(){
         super()
@@ -12,10 +12,10 @@ export default class extends AbstractView{
 
 <div class="row">
   <div class="col-md-6">
-    <h3 class="display-6 text-primary">Timeline</h3> 
+    <h3 class="display-6 text-primary">`+myArray[0]+`</h3> 
   </div>
   <div class="col-md-6"> 
-  <h3 class="display-6 text-primary">FAQ</h3>
+  <h3 class="display-6 text-primary">`+myArray[1]+`</h3>
   </div>
 </div>
 <div class="row align-items-center text-secondary">
